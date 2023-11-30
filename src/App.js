@@ -32,10 +32,11 @@ function ContentDisplay(props) {
   };
   return (
     <div className="book">
-      <h3>{props.title}</h3>
-      <p>{props.author}</p>
+      <h2>{props.title}</h2>
+      <h4>{props.author}</h4>
       <p>{props.shortDesc}</p>
       <img className="book-cover" src={props.cover} alt="book cover" />
+      <p></p>
       <button onClick={handleClick}>
         {expanded ? " ▼ show less" : " ▶ show more"}
       </button>
